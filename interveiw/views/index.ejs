@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/semantic/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="/stylesheets/semantic/semantic.min.js"></script>
+  </head>
+  <body>
+    <div class="ui container">
+
+      <h1 class="ui center aligned header">Insomnia Severity Index</h1>
+      <h2 class="ui dividing header">Instruction</h2>
+      <p>
+        The Insomnia Severity Index has seven questions. The seven answers are added up to get a total score. When you have
+        your total score, look at the
+        <strong>'Guidelines for Scoring/Interpretation'</strong>
+        below to see where your sleep difficulty fits.
+      </p>
+      <form action='/submit' method="post">
+        <h2 class="ui dividing header">Question 1</h2>
+        <div class="ui form" id = "question1">
+          <div class="grouped fields">
+            <label>Difficulty falling asleep</label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question1" value="0">
+                <label>None</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question1" value="1">
+                <label>Mild</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question1" value="2">
+                <label>Moderate</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question1" value="3">
+                <label>Severe</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question1" value="4">
+                <label>Very Severe</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Question 2</h2>
+        <div class="ui form" id = "question4">
+          <div class="grouped fields">
+            <label>Difficulty staying asleep</label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question2" value="0">
+                <label>None</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question2" value="1">
+                <label>Mild</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question2" value="2">
+                <label>Moderate</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question2" value="3">
+                <label>Severe</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question2" value="4">
+                <label>Very Severe</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Question 3</h2>
+        <div class="ui form" id = "question3">
+          <div class="grouped fields">
+            <label>Problems waking up too early</label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question3" value="0">
+                <label>None</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question3" value="1">
+                <label>Mild</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question3" value="2">
+                <label>Moderate</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question3" value="3">
+                <label>Severe</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question3" value="4">
+                <label>Very Severe</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Question 4</h2>
+        <div class="ui form" id = "question4">
+          <div class="grouped fields">
+            <label>How <strong>SATISFIED/DISSATISFIED</strong> are you with your <strong>CURRENT</strong> sleep pattern? </label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question4" value="0">
+                <label>Very Satisfied</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question4" value="1">
+                <label>Satisfied</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question4" value="2">
+                <label>Moderately Satisfied</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question4" value="3">
+                <label>Dissatisfied</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question4" value="4">
+                <label>Very Dissatisfied</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Question 5</h2>
+        <div class="ui form" id = "question5">
+          <div class="grouped fields">
+            <label>How <strong>NOTICEABLE</strong> to others do you think your sleep problem is in terms of impairing the quality of your life? </label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question5" value="0">
+                <label>Not at all Noticeable</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question5" value="1">
+                <label>A Little</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question5" value="2">
+                <label>Somewhat</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question5" value="3">
+                <label>Much</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question5" value="4">
+                <label>Very Much Noticeable</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Question 6</h2>
+        <div class="ui form" id = "question6">
+          <div class="grouped fields">
+            <label>How <strong>WORRIED/DISTRESSED</strong> are you about your current sleep problem?</label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question6" value="0">
+                <label>Not at all Worried</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question6" value="1">
+                <label>A Little</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question6" value="2">
+                <label>Somewhat</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question6" value="3">
+                <label>Much</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question6" value="4">
+                <label>Very Much Worried</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Question 7</h2>
+        <div class="ui form" id = "question7">
+          <div class="grouped fields">
+            <label> To what extent do you consider your sleep problem to <strong>INTERFERE</strong> with your daily functioning (e.g. daytime
+              fatigue, mood, ability to function at work/daily chores, concentration, memory, mood, etc.) <strong>CURRENTLY</strong>?</label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question7" value="0">
+                <label>Not at all Interfering</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question7" value="1">
+                <label>A Little</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question7" value="2">
+                <label>Somewhat</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question7" value="3">
+                <label>Much</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="question7" value="4">
+                <label>Very Much Interfering</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header">Your Name</h2>
+        <div class="ui input">
+          <input type="text" name="username" placeholder="Your Name...">
+        </div>
+
+        <h2 class="ui header"></h2>
+        <div>
+          <button class="ui primary button">
+            Submit
+          </button>
+        </div>
+      </form>
+      <div class="footer"></div>
+    </div>
+
+    <script>
+      function getValue(){
+
+      }
+    </script>
+  </body>
+</html>
